@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Café Landing Page</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            background-image: url('https://assets.architecturaldigest.in/photos/63c658b88df6b9fdb924d938/master/w_1600%2Cc_limit/Maai-10.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .hero-text {
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+        }
+
+        .hero-text .btn {
+            font-size: 1.25rem;
+            padding: 10px 25px;
+            margin-top: 20px;
+        }
+
+        .menu-section {
+            padding: 60px 0;
+        }
+
+        .menu-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .menu-item:hover img {
+            opacity: 0.8;
+        }
+
+        .menu-item .card-body {
+            text-align: center;
+        }
+
+        .menu-item .card-body h5 {
+            font-size: 1.25rem;
+        }
+
+        .menu-item .card-body p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .social-links a {
+            font-size: 24px;
+            margin: 0 15px;
+        }
+
+        .social-links a:hover {
+            color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Welcome to The Cozy Café</h1>
+                <p class="lead">Experience the Best Coffee & Desserts in Town</p>
+                <a href="#menu" class="btn btn-light btn-lg">Explore Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section text-center">
+        <div class="container">
+            <h2 class="mb-5">Our Menu</h2>
+            <div class="row">
+                <!-- Menu Item 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-item">
+                        <img src="https://nomadbarista.com/wp-content/uploads/2019/12/espresso-ou-expresso.jpg" alt="Espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Espresso</h5>
+                            <p class="card-text">Rich and intense espresso to kickstart your day.</p>
+                            <span class="badge bg-success">$4.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-item">
+                        <img src="https://th.bing.com/th/id/OIP.7bEK8zNR1hmj63EuvmzdYgHaLH?w=208&h=305&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="card-img-top" alt="Cake">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Cake</h5>
+                            <p class="card-text">Decadent chocolate cake with a creamy finish.</p>
+                            <span class="badge bg-success">$5.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-item">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.6Lb2xzBM3B6maFHPDwhw5AHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Latte">
+                        <div class="card-body">
+                            <h5 class="card-title">Café Latte</h5>
+                            <p class="card-text">Smooth espresso with steamed milk and a silky finish.</p>
+                            <span class="badge bg-success">$4.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="lead">The Cozy Café is a place where you can enjoy the best freshly brewed coffee, delicious pastries, and a relaxing atmosphere. Whether you're catching up with friends or enjoying a quiet moment, we have something for everyone.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2025 The Cozy Café. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" class="me-3">Facebook</a>
+                <a href="https://instagram.com" target="_blank" class="me-3">Instagram</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
